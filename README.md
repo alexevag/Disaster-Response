@@ -12,7 +12,7 @@
 |- disaster_categories.csv # data to process   
 |- disaster_messages.csv # data to process  
 |- process_data.py  
-|- DisasterResponse.db # databasa
+|- DisasterResponse.db # database
 
 - models  
 |- train_classifier.py  
