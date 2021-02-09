@@ -42,4 +42,4 @@ Using data from Figure-8, the goal is to classify a message that was created in 
 - Web App: Flask
 - Data Visualization: Plotly
 
-## Screendhots
+## Screenshots
