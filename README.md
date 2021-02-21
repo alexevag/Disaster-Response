@@ -1,9 +1,23 @@
 # Disaster-Response
+
+## Table of Contents
+1. [Motivation](#Motivation)
+2. [Instructions](#Instructions)
+	1. [Files structure](#files_structure)
+	2. [Execution](#execution)
+	4. [Dependecies](#Dependecies)
+3. [Authors](#author)
+4. [License](#license)
+5. [Acknowledgement](#acknowledgement)
+6. [Screenshots](#Screenshots)
+
+<a name="Motivation"></a>
 ## Motivation
 This project is a part of the Udacity's Data Scientist Nanodegree. 
 Using data from Figure-8, the goal is to classify a message that was created in a disaster among 36 categories to help the aid efforts
 
-## The file structure
+<a name="files_structure"></a>
+## Files structure
 ```
 - app  
 | - template  
@@ -24,9 +38,11 @@ Using data from Figure-8, the goal is to classify a message that was created in 
 - README.md  
 ```
 
+<a name="Instructions"></a>
 ## Instructions:
 
-# Run the scripts:
+<a name="execution"></a>
+### Run the scripts:
 1. Run the following commands in the project's root directory to set up your database and model.
     - To run ETL pipeline that cleans data and stores in database: 
         * `python data/process_data.py data/disaster_messages.csv data/disaster_categories.csv data/DisasterResponse.db`
@@ -34,6 +50,7 @@ Using data from Figure-8, the goal is to classify a message that was created in 
         * `python models/train_classifier.py data/DisasterResponse.db models/classifier.pkl`
 2. Run the following command in the app's directory to run your web app: `python run.py`
 
+<a name="Dependecies"></a>
 ## Dependecies
 - Python 3.8+
 - Machine Learning: NumPy, Pandas, Sciki-Learn
@@ -42,4 +59,20 @@ Using data from Figure-8, the goal is to classify a message that was created in 
 - Web App: Flask
 - Data Visualization: Plotly
 
+<a name="author"></a>
+## Authors
+
+* [Alexandros Evangelou](https://github.com/Evaggelou)
+
+<a name="license"></a>
+## License
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+<a name="acknowledgement"></a>
+## Acknowledgements
+
+* [Figure-Eight](https://www.figure-eight.com/) for providing the dataset
+* [Udacity](https://www.udacity.com/)
+
+<a name="Screenshots"></a>
 ## Screenshots
