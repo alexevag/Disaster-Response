@@ -78,3 +78,5 @@ Using data from Figure-8, the goal is to classify a message that was created in 
 
 <a name="Screenshots"></a>
 ## Screenshots
+An example of message "Need some water and food"
+<img width="715" alt="message" src="https://user-images.githubusercontent.com/18635146/108638981-b2e3ef00-749a-11eb-84f4-2fc453913778.PNG">
