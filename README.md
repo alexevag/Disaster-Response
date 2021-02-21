@@ -50,6 +50,7 @@ Using data from Figure-8, the goal is to classify a message that was created in 
     - To run ML pipeline that trains classifier and saves it: 
         * `python models/train_classifier.py data/DisasterResponse.db models/classifier.pkl`
 2. Run the following command in the app's directory to run your web app: `python run.py`
+    - Go to http://0.0.0.0:3001/
 
 <a name="Dependecies"></a>
 ## Dependecies
