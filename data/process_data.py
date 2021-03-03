@@ -12,8 +12,8 @@ def load_data(messages_filepath, categories_filepath):
         df: dataframe with the messages and categories
     '''
     # Read the csv files
-    messages = pd.read_csv("messages.csv")
-    categories = pd.read_csv("categories.csv")
+    messages = pd.read_csv(messages_filepath)
+    categories = pd.read_csv(categories_filepath)
     
     #merge the 2 dataframes
     df = pd.merge(messages, categories, on = 'id', how = 'inner')
@@ -72,7 +72,7 @@ def save_data(df, database_filename):
     Output:
     '''
     engine = create_engine('sqlite:///' + database_filename)
-    df.to_sql('InsertTableName', engine, index=False)
+    df.to_sql('RESPONSES', engine, index=False)
 
 def main():
     if len(sys.argv) == 4:

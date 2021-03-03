@@ -8,8 +8,9 @@ from nltk.tokenize import word_tokenize
 from flask import Flask
 from flask import render_template, request, jsonify
 from plotly.graph_objs import Bar
-from sklearn.externals import joblib
+# from sklearn.externals import joblib
 from sqlalchemy import create_engine
+import joblib
 
 
 app = Flask(__name__)
@@ -26,11 +27,11 @@ def tokenize(text):
     return clean_tokens
 
 # load data
-engine = create_engine('sqlite:///../data/YourDatabaseName.db')
-df = pd.read_sql_table('YourTableName', engine)
+engine = create_engine('sqlite:///../data/DisasterResponse.db')
+df = pd.read_sql_table('RESPONSES', engine)
 
 # load model
-model = joblib.load("../models/your_model_name.pkl")
+model = joblib.load("../models/classifier.pkl")
 
 
 # index webpage displays cool visuals and receives user input text for model
@@ -43,6 +44,10 @@ def index():
     genre_counts = df.groupby('genre').count()['message']
     genre_names = list(genre_counts.index)
     
+    # Find distribution of every class
+    distr_class = df.drop(['id', 'message', 'original', 'genre'], axis = 1).sum()/len(df)
+    distr_class = distr_class.sort_values(ascending = True)
+    distr_labels = list(distr_class.index)
     # create visuals
     # TODO: Below is an example - modify to create your own visuals
     graphs = [
@@ -61,6 +66,24 @@ def index():
                 },
                 'xaxis': {
                     'title': "Genre"
+                }
+            }
+        },
+        {
+            'data': [
+                Bar(
+                    x=distr_labels,
+                    y=distr_class
+                )
+            ],
+            'layout':{
+                'title': 'Distribution of messages',
+                'yaxis':{
+                    'title': 'Distribution'
+                },
+                'xaxis':{
+                    'title': "Class",
+                    'tickangle': -40
                 }
             }
         }
