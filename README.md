@@ -7,10 +7,11 @@
 	1. [Files structure](#files_structure)
 	2. [Execution](#execution)
 	4. [Dependecies](#Dependecies)
-3. [Author](#author)
-4. [License](#license)
-5. [Acknowledgement](#acknowledgement)
-6. [Screenshots](#Screenshots)
+3. [Screenshots](#Screenshots)
+4. [Author](#author)
+5. [License](#license)
+6. [Acknowledgement](#acknowledgement)
+
 
 <a name="Motivation"></a>
 ## Motivation
