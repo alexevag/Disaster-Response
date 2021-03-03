@@ -7,7 +7,7 @@
 	1. [Files structure](#files_structure)
 	2. [Execution](#execution)
 	4. [Dependecies](#Dependecies)
-3. [Authors](#author)
+3. [Author](#author)
 4. [License](#license)
 5. [Acknowledgement](#acknowledgement)
 6. [Screenshots](#Screenshots)
@@ -61,8 +61,13 @@ Using data from Figure-8, the goal is to classify a message that was created in 
 - Web App: Flask
 - Data Visualization: Plotly
 
+<a name="Screenshots"></a>
+## Screenshots
+An example of message "Need some water and food"
+<img width="715" alt="message" src="https://user-images.githubusercontent.com/18635146/108638981-b2e3ef00-749a-11eb-84f4-2fc453913778.PNG">
+
 <a name="author"></a>
-## Authors
+## Author
 
 * [Alexandros Evangelou](https://github.com/Evaggelou)
 
@@ -75,8 +80,3 @@ Using data from Figure-8, the goal is to classify a message that was created in 
 
 * [Figure-Eight](https://www.figure-eight.com/) for providing the dataset
 * [Udacity](https://www.udacity.com/)
-
-<a name="Screenshots"></a>
-## Screenshots
-An example of message "Need some water and food"
-<img width="715" alt="message" src="https://user-images.githubusercontent.com/18635146/108638981-b2e3ef00-749a-11eb-84f4-2fc453913778.PNG">
