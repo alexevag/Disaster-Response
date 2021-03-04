@@ -64,10 +64,10 @@ def tokenize(text):
     text_lemmed = [lemmatizer.lemmatize(word, pos='v') for word in tokens if word not in stop_words]
     
     # Find stems
-    stemmer = PorterStemmer()
-    text_stemmed = [stemmer.stem(word) for word in text_lemmed]
+    # stemmer = PorterStemmer()
+    # text_stemmed = [stemmer.stem(word) for word in text_lemmed]
 
-    return text_stemmed
+    return text_lemmed
 
 
 def build_model():
