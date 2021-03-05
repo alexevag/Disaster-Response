@@ -102,7 +102,7 @@ def evaluate_model(model, X_test, Y_test, category_names):
     '''
     y_pred = model.predict(X_test)
     #print classification report for every category
-    for i,col in enumerate(Y.columns):
+    for i,col in enumerate(Y_test.columns):
         print(f"###################   {col}   ####################")
         print(classification_report(list(Y_test.values[:, i]), list(y_pred[:, i])))
 
