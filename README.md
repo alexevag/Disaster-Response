@@ -1,6 +1,6 @@
 # Disaster-Response
 <img width="808" alt="disaster" src="https://user-images.githubusercontent.com/18635146/108637785-d1df8280-7494-11eb-83bc-f89694abe0e1.PNG">
-#test
+
 ## Table of Contents
 1. [Motivation](#Motivation)
 2. [Instructions](#Instructions)
